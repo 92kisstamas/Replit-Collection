@@ -1,0 +1,325 @@
+class Main {
+  public static void main(String[] args) {
+    int allTurbines = 25;
+    int turbineCounter = 0;
+    int turbinePower = 0;
+    int sumPower = 0;
+
+    for (int i = 0; i < allTurbines; i++) {
+      if (i < 10) {
+        turbineCounter++;
+        turbinePower = 2000;
+        sumPower += turbinePower;
+        System.out.println("A(z) " + turbineCounter + ". számú szélturbina teljes fordulaton működik, " + turbinePower + " MWh-t termelve. A farmon termelt összenergia jelenleg " + sumPower + " MWh.");
+      } else if (i < 20) {
+        turbineCounter++;
+        turbinePower = 1000;
+        sumPower += turbinePower;
+        System.out.println("A(z) " + turbineCounter + ". számú szélturbina fél fordulaton működik, " + turbinePower + " MWh-t termelve. A farmon termelt összenergia jelenleg " + sumPower + " MWh.");
+      } else if (i < 25) {
+        turbineCounter++;
+        turbinePower = 0;
+        sumPower += turbinePower;
+        System.out.println("A(z) " + turbineCounter + ". számú szélturbina nem működik, " + turbinePower + " MWh-t termelve. A farmon termelt összenergia jelenleg " + sumPower + " MWh.");
+      } else {
+        System.out.println("Valami váratlan történt.");
+      }
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("DogCatMouse");
+    for (int i = 1; i <= 100; i++) {
+      if (i % 15 == 0) {
+        System.out.println(i + " #MOUSE");
+      } else if (i % 3 == 0) {
+        System.out.println(i + " !DOG");
+      } else if (i % 5 == 0) {
+        System.out.println(i + " ?CAT");
+      } else {
+        System.out.println(i);
+      }
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    for (int i = 1; i <= 20; i++) {
+      if (i % 2 != 0) {
+      System.out.println(i + " egy páratlan szám.");
+    } else if (i == 10) {
+      System.out.println("A 10 a legszebb páros szám.");
+    } else {
+      System.out.println(i + " egy páros szám.");
+    }
+    }
+  }  
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("OnlineMagazine");
+
+    int age = 18;
+
+    if (age < 18) {
+      System.out.println("Sajnáljuk, de ez a cikk csak 18 éven felüliek számára érhető el.");
+    } else if (age == 18) {
+      System.out.println("Pont 18? Gratulálunk, üdv a felnőttek között! Jó szórakozást a cikkhez!");
+    } else {
+      System.out.println("Köszönjük! Elolvashatod ezt a cikket.");
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    int number1 = 4;
+    int number2 = 15;
+
+    if (number1 < number2) {
+     System.out.println(number1 + " kisebb, mint " + number2);
+     } else {
+     System.out.println(number1 + " nagyobb, mint " + number2);
+     }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    int totalDwarves = 10;
+    int workingDwarves = 5;
+    int dwarfCounter = 1;
+
+    while (dwarfCounter <= workingDwarves) {
+      System.out.println("A(z) " + dwarfCounter + ". törpe a bányában.");
+      dwarfCounter++;
+    }
+
+    for (; dwarfCounter <= totalDwarves; dwarfCounter++) {
+      System.out.println("A(z) " + dwarfCounter + ". törpe még otthon alszik.");
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello skylark");
+    int rabbitPopulation = 15;
+    int monthCounter = 1;
+
+    for (; monthCounter <= 6; monthCounter++) {
+      rabbitPopulation = rabbitPopulation * 2;
+      System.out.println("A(z) " + monthCounter + ". hónapban " + rabbitPopulation + " a nyúlpopuláció.");
+    }
+
+    for (; monthCounter <= 12; monthCounter++) {
+      rabbitPopulation = rabbitPopulation * 3;
+      System.out.println("A(z) " + monthCounter + ". hónapban " + rabbitPopulation + " a nyúlpopuláció.");
+    }
+  }
+}
+
+
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello for!");
+    for (int dwarfCounter = 1; dwarfCounter <= 7; dwarfCounter++) {
+      System.out.println("A(z) " + dwarfCounter + ". törpe a bányában.");
+    }
+  }
+}
+
+
+
+class Main14 {
+  public static void main(String[] args) {
+    System.out.println("Hello countdown!");
+    int seconds = 10;
+    while (seconds >= 0) {
+      System.out.println("Final Countdown: " + seconds);
+      seconds--;
+    }
+  }
+}
+
+
+class Main13 {
+  public static void main(String[] args) {
+    int dwarfCounter = 1;
+    while (dwarfCounter <= 7) {
+      System.out.println("A(z) " + dwarfCounter + ". törpe a bányában.");
+      dwarfCounter++;
+    }
+  }  
+}
+
+
+
+class Main12 {
+  public static void main(String[] args) {
+    int variable = 10;
+    localScope();
+    System.out.println("the variable in the main method: " + variable);
+  }
+
+  public static void localScope() {
+      int variable = 20;
+      System.out.println("local variable in the function: " + variable);
+  }
+}
+
+
+class Main11 {
+  public static void main(String[] args) {
+    circlesPerimeterArea (15);
+  }
+
+  public static double circlesPerimeter (int radiusOfPerimeter) {
+    return 2 * 3.14 * radiusOfPerimeter;
+  }
+
+  public static double circlesArea (int radiusOfArea) {
+    return 3.14 * (radiusOfArea * radiusOfArea);
+  }
+
+  public static void circlesPerimeterArea (int radiusFromUser) {
+    double perimeter = circlesPerimeter(radiusFromUser);
+    double area = circlesArea(radiusFromUser);
+    System.out.println("A kör kerülete: " + perimeter + "\nA kör területe: " + area);
+  }
+}
+
+
+class Main10 {
+  public static void main(String[] args) {
+    printRectangleArea(2, 4);
+  }  
+
+  public static int calculateRectangleArea(int width, int height) {
+    return width * height;
+  }
+
+  public static void printRectangleArea(int widthFromUser, int heightFromUser) {
+    int area = calculateRectangleArea(widthFromUser, heightFromUser);
+    System.out.println("A négyszög területe " + area + " négyzetméter.");
+  }
+}
+
+
+class Main9 {
+  public static void main(String[] args) {
+    printRectangleArea();
+    /*System.out.println("A négyszög területe " + calculateRectangleArea(5, 7) + " négyzetméter.");*/
+  }  
+
+  public static int calculateRectangleArea(int width, int height) {
+  return width * height;
+  }
+
+  public static void printRectangleArea() {
+  int area = calculateRectangleArea(5, 7);
+  System.out.println("A négyszög területe " + area + " négyzetméter.");
+  }
+}
+
+
+
+class Main8 {
+  public static void main(String[] args) {
+    System.out.println("A felhasználó életkora" + calculateAge(2021, 1992));
+  }
+
+  public static int calculateAge ( int currentYear, int birthYear ) {
+    int age = currentYear - birthYear;
+    return age;
+  }
+}
+
+
+class Main7 {
+  public static void main(String[] args) {
+    System.out.println("A ház nem hivatalos, ám közismert jelmondata: \'Egy Lannister mindig megfizeti az adósságait.\' A valódi jelmondatuk ezzel szemben: \'Halld üvöltésem!\'");
+    System.out.println("Szép cica, jó cica,\nSelymes a bundád.\nKedves cica, \nálmos cica,\nBújj hozzám.");
+    System.out.println("első string".equals("második string"));
+  }
+}
+
+class Main6 {
+  public static void main(String[] args) {
+    int distance = 700;
+    int gasPrice = 480;
+    int meanOfConsumption = 7; 
+    System.out.println(600 * 6.5 / 100);
+    System.out.println(600 * 6.5 / 100 * gasPrice);
+    System.out.println(distance * meanOfConsumption / 100 * gasPrice);
+  }  
+}
+
+
+class Main5 {
+  public static void main(String[] args) {
+    String userName;
+    userName = "Tamás";
+    String userAddress;
+    String phoneNumber;
+    System.out.println(userName);
+  }  
+}
+
+
+class Main4 {
+  public static void main(String[] args) {
+    int sumOfTwoNumbers = 10 + 10;
+    String sumOfTwoStrings = "egy," + " megérett a meggy";
+    System.out.println(sumOfTwoNumbers);
+    System.out.println(sumOfTwoStrings);
+    String myName = "Alex";
+    System.out.println("Helló, a nevem " + myName);
+
+    int ultimateAnswer = 1890 / 90 * 2;
+    System.out.println("A válasz az életre, a világmindenségre, meg mindenre: " + ultimateAnswer);
+  }  
+}
+
+
+class Main3 {
+  public static void main(String[] args) {
+    int studentCount = 7;
+    int sumOfGrades = 5 + 5 + 3 + 5 + 4 + 2 + 2;
+    int manOfGrades = sumOfGrades / studentCount;
+    System.out.println(manOfGrades);
+  }
+}
+
+
+class Main2 {
+  public static void main(String[] args) {
+    final double PI = 3.14159265358979323846;
+    //PI = 2.0;
+    System.out.println();
+  }  
+}
+
+
+class Main1 {
+  public static void main(String[] args) {
+    printFavouriteRecipe();
+  }
+
+  public static void printFavouriteRecipe() {
+    System.out.println("Mindegy is mit írok ide,");
+    System.out.println("Mert\nSzerintem...");
+    System.out.println("Nem az a\nLényeg");
+  }
+}
